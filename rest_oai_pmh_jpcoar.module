@@ -1,0 +1,19 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function rest_oai_pmh_jpcoar_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the rest_oai_pmh module.
+    case 'help.page.rest_oai_pmh_jpcoar':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Jpcoar format for rest_oai_pmh') . '</p>';
+      return $output;
+
+    default:
+  }
+}
