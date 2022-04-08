@@ -15,7 +15,7 @@ use Drupal\views\Views;
  *  metadata_format = "jpcoar",
  *  template = {
  *    "type" = "module",
- *    "name" = "jpcoar",
+ *    "name" = "rest_oai_pmh_jpcoar",
  *    "directory" = "templates",
  *    "file" = "jpcoar"
  *  }
