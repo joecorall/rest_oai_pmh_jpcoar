@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\jpcoar\Plugin\OaiMetadataMap;
+namespace Drupal\rest_oai_pmh_jpcoar\Plugin\OaiMetadataMap;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\rest_oai_pmh\Plugin\OaiMetadataMapBase;
