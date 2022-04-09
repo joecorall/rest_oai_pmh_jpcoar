@@ -1,0 +1,10 @@
+<titleInfo>
+  <title>{{ elements.title }}</title>
+</titleInfo>
+<abstract>{{ elements.description }}</abstract>
+<okay>heh</okay>
+<subject>
+  {% for topic in elements.subject_topic |split (', ') %}
+    <topic>{{ topic|trim }}</topic>
+  {% endfor %}
+</subject>

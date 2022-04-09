@@ -17,3 +17,12 @@ function rest_oai_pmh_jpcoar_help($route_name, RouteMatchInterface $route_match)
     default:
   }
 }
+
+/**
+ * Implements hook_rest_oai_pmh_metadata_template_alter().
+ */
+function rest_oai_pmh_jpcoar_rest_oai_pmh_metadata_template_alter(array &$template) {
+  if ($template['file'] == 'mods') {
+    $template['name'] = 'rest_oai_pmh_jpcoar';
+  }
+}
